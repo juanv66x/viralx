@@ -8,6 +8,14 @@
 \description{
 A dedicated viral-explainer model tool designed to empower researchers in the field of HIV research, particularly in viral load and CD4 (Cluster of Differentiation 4) lymphocytes regression modeling. Drawing inspiration from the 'tidymodels' framework for rigorous model building of Max Kuhn and Hadley Wickham (2020) \url{https://www.tidymodels.org}, and the 'DALEXtra' tool for explainability by Przemyslaw Biecek (2020) \doi{10.48550/arXiv.2009.13248}. It aims to facilitate interpretable and reproducible research in biostatistics and computational biology for the benefit of understanding HIV dynamics.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/juanv66x/viralx}
+  \item Report bugs at \url{https://github.com/juanv66x/viralx/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Juan Pablo Acuña González \email{22253567@uagro.mx} (\href{https://orcid.org/0009-0003-6029-6560}{ORCID})
 
