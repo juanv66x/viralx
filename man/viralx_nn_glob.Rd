@@ -29,6 +29,7 @@ The viralx_nn_glob function is designed to provide global explanations for
 the specified neural network model.
 }
 \examples{
+\dontrun{
 library(dplyr)
 library(rsample)
 cd_2019 <- c(824, 169, 342, 423, 441, 507, 559,
@@ -83,4 +84,5 @@ v_train <- vi_train |>
 rsample::training() |>
 dplyr::select(rsample::all_of(vip_featured))
 viralx_nn_glob(vip_featured, hiv_data, hu, plty, epo, vip_train, v_train)
+}
 }
