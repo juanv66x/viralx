@@ -2,3 +2,4 @@
 
 export(glob_knn_vis)
 export(viralx_knn)
+export(viralx_knn_shap)
