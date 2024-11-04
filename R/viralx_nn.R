@@ -15,6 +15,7 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' library(dplyr)
 #' library(rsample)
 #' cd_2019 <- c(824, 169, 342, 423, 441, 507, 559,
@@ -67,6 +68,7 @@
 #' dplyr::select(rsample::all_of(vip_features))
 #' vip_new <- vip_train[1,]
 #' viralx_nn(vip_featured, hiv_data, hu, plty, epo, vip_train, vip_new)
+#' }
 viralx_nn <- function(vip_featured, hiv_data, hu, plty, epo, vip_train, vip_new) {
   DALEXtra::explain_tidymodels(workflows::workflow() |>
                                  workflows::add_recipe(recipes::recipe(stats::as.formula(paste(vip_featured,"~.")), data = hiv_data) |>
