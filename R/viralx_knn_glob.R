@@ -17,6 +17,7 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' library(dplyr)
 #' library(rsample)
 #' set.seed(123)
@@ -29,6 +30,7 @@
 #' v_train <- train2 |>
 #' select(all_of(vip_featured))
 #' viralx_knn_glob(vip_featured, hiv_data, knn_hyperparameters, vip_train, v_train)
+#' }
 viralx_knn_glob <- function(vip_featured, hiv_data, knn_hyperparameters, vip_train, v_train) {
   DALEXtra::explain_tidymodels(workflows::workflow() |>
                                  workflows::add_recipe(recipes::recipe(stats::as.formula(paste(vip_featured,"~.")), data = hiv_data) |>
