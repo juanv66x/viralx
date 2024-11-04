@@ -2,5 +2,6 @@
 
 export(glob_knn_vis)
 export(viralx_knn)
+export(viralx_knn_glob)
 export(viralx_knn_shap)
 export(viralx_knn_vis)
