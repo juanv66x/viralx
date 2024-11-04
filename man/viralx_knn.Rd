@@ -31,10 +31,12 @@ viral load data using the DALEX and DALEXtra packages. It provides insights
 into the specified variable's impact on the KNN model's predictions.
 }
 \examples{
+\dontrun{
 hiv_data <- train2
 knn_hyperparameters <- list(neighbors = 5, weight_func = "optimal", dist_power = 0.3304783)
 vip_featured <- "cd_2022"
 vip_train <- hiv_data
 vip_new <- vip_train[1,]
 viralx_knn(vip_featured, hiv_data, knn_hyperparameters, vip_train, vip_new)
+}
 }

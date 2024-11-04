@@ -18,6 +18,7 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' set.seed(123)
 #' hiv_data <- train2
 #' knn_hyperparameters <- list(neighbors = 5, weight_func = "optimal", dist_power = 0.3304783)
@@ -26,6 +27,7 @@
 #' vip_new <- vip_train[1, ]
 #' orderings <- 20
 #' viralx_knn_shap(vip_featured, hiv_data, knn_hyperparameters, vip_train, vip_new, orderings)
+#' }
 viralx_knn_shap <- function(vip_featured, hiv_data, knn_hyperparameters, vip_train, vip_new, orderings) {
   DALEXtra::explain_tidymodels(
     workflows::workflow() |>
