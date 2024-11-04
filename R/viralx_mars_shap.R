@@ -18,6 +18,7 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' library(dplyr)
 #' library(rsample)
 #' cd_2019 <- c(824, 169, 342, 423, 441, 507, 559,
@@ -71,6 +72,7 @@
 #' vip_new <- vip_train[1,]
 #' orderings <- 20
 #' viralx_mars_shap(vip_featured, hiv_data, nt, pd, pru, vip_train, vip_new,orderings)
+#' }
 viralx_mars_shap <- function(vip_featured, hiv_data, nt, pd, pru, vip_train, vip_new, orderings) {
   DALEXtra::explain_tidymodels(workflows::workflow() |>
                                  workflows::add_recipe(recipes::recipe(stats::as.formula(paste(vip_featured,"~.")), data = hiv_data)) |>
