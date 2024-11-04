@@ -41,6 +41,7 @@ Additive Explanations) values. It utilizes the DALEXtra and DALEX packages to
 provide SHAP-based explanations for the specified model.
 }
 \examples{
+\dontrun{
 library(dplyr)
 library(rsample)
 cd_2019 <- c(824, 169, 342, 423, 441, 507, 559,
@@ -94,4 +95,5 @@ dplyr::select(rsample::all_of(vip_features))
 vip_new <- vip_train[1,]
 orderings <- 20
 viralx_nn_shap(vip_featured, hiv_data, hu, plty, epo, vip_train, vip_new, orderings)
+}
 }

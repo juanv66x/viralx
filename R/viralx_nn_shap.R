@@ -17,7 +17,7 @@
 #' @export
 #'
 #' @examples
-#' \dintrun{
+#' \dontrun{
 #' library(dplyr)
 #' library(rsample)
 #' cd_2019 <- c(824, 169, 342, 423, 441, 507, 559,
