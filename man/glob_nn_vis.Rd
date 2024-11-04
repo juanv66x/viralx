@@ -31,6 +31,7 @@ DALEXtra package to explain the model's predictions and then creates a global
 SHAP visualization.
 }
 \examples{
+\dontrun{
 library(dplyr)
 library(rsample)
 cd_2019 <- c(824, 169, 342, 423, 441, 507, 559,
@@ -85,4 +86,5 @@ v_train <- vi_train |>
 rsample::training() |>
 dplyr::select(rsample::all_of(vip_featured))
 glob_nn_vis(vip_featured, hiv_data, hu, plty, epo, vip_train, v_train)
+}
 }
