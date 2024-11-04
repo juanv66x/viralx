@@ -36,6 +36,7 @@ This function calculates global feature importance for a K-Nearest Neighbors
 (KNN) model trained on HIV data with specified hyperparameters.
 }
 \examples{
+\dontrun{
 library(dplyr)
 library(rsample)
 set.seed(123)
@@ -48,4 +49,5 @@ select(all_of(vip_features))
 v_train <- train2 |>
 select(all_of(vip_featured))
 viralx_knn_glob(vip_featured, hiv_data, knn_hyperparameters, vip_train, v_train)
+}
 }
