@@ -29,6 +29,7 @@ Explains the predictions of a neural network regression model for viral load
 or CD4 counts using the DALEX and DALEXtra tools
 }
 \examples{
+\dontrun{
 library(dplyr)
 library(rsample)
 cd_2019 <- c(824, 169, 342, 423, 441, 507, 559,
@@ -81,4 +82,5 @@ rsample::training() |>
 dplyr::select(rsample::all_of(vip_features))
 vip_new <- vip_train[1,]
 viralx_nn(vip_featured, hiv_data, hu, plty, epo, vip_train, vip_new)
+}
 }
